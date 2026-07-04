@@ -502,6 +502,47 @@ footer {
   letter-spacing: -0.01em;
 }
 
+/* ===== ABOUT SNAPSHOT ===== */
+.about-snapshot {
+  padding: 100px 48px;
+  border-top: 1px solid rgba(11,227,242,0.06);
+}
+.about-snapshot-inner {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 56px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.about-snapshot-text h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  margin-bottom: 24px;
+}
+.about-snapshot-text p {
+  font-size: 1.02rem;
+  line-height: 1.85;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.about-snapshot-accent {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-snapshot-waves {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
 /* ===== NO GATEKEEPING ===== */
 .gatekeeping {
   padding: 100px 48px;
@@ -510,7 +551,7 @@ footer {
   overflow: hidden;
 }
 .gatekeeping-inner {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -527,11 +568,11 @@ footer {
 }
 .gatekeeping-heading {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.15;
-  margin-bottom: 24px;
+  line-height: 1.12;
+  margin-bottom: 32px;
   position: relative;
   z-index: 1;
 }
@@ -542,11 +583,11 @@ footer {
   background-clip: text;
 }
 .gatekeeping-body {
-  font-size: 1rem;
-  line-height: 1.85;
+  font-size: 1.08rem;
+  line-height: 1.8;
   color: var(--text-muted);
   font-weight: 300;
-  max-width: 640px;
+  max-width: 780px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -741,12 +782,12 @@ footer {
 .w-card:nth-child(4) .w-card-icon svg { stroke: var(--cyan); }
 .w-card h3 {
   font-family: 'Syne', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 10px;
   letter-spacing: -0.01em;
 }
-.w-card p { font-size: 0.85rem; line-height: 1.7; color: var(--text-muted); font-weight: 300; }
+.w-card p { font-size: 0.92rem; line-height: 1.7; color: var(--text-muted); font-weight: 300; }
 
 /* ===== SPECIALTIES ===== */
 .specialties {
@@ -779,7 +820,7 @@ footer {
 }
 .spec-text h2 {
   font-family: 'Syne', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.15;
@@ -854,7 +895,7 @@ footer {
 .pricing-label::before { content: ''; width: 20px; height: 2px; background: var(--green); }
 .pricing-home-content h2 {
   font-family: 'Syne', sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.12;
@@ -964,10 +1005,10 @@ footer {
   background: radial-gradient(circle, rgba(11,227,242,0.06) 0%, rgba(142,11,242,0.04) 30%, transparent 60%);
   pointer-events: none;
 }
-.page-header-content { position: relative; z-index: 1; max-width: 740px; margin: 0 auto; }
+.page-header-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
 .page-header-label {
   font-family: 'Syne', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -976,18 +1017,18 @@ footer {
 }
 .page-header h1 {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.03em;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .page-header .sub {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.75;
   color: var(--text-muted);
   font-weight: 300;
-  max-width: 620px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
@@ -1189,9 +1230,12 @@ footer {
   font-size: 2.6rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.12;
+  line-height: 1.15;
   margin-bottom: 20px;
   position: relative;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .svc-cta p {
   font-size: 1rem;
@@ -1612,11 +1656,11 @@ footer {
   margin-bottom: 22px;
 }
 .svc-detail-intro-text p {
-  font-size: 1rem;
+  font-size: 1.06rem;
   line-height: 1.85;
   color: var(--text-muted);
   font-weight: 300;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 .svc-detail-photo {
   background: var(--royal-indigo);
@@ -2865,9 +2909,9 @@ footer {
 /* ===== REDESIGNED DECO QUOTE (two-column) ===== */
 .deco-quote-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 380px 1fr;
   gap: 48px;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   align-items: center;
 }
@@ -3350,7 +3394,7 @@ footer {
       <svg class="logo-wave" viewBox="0 0 28 16"><path d="M2 8c3-5 5-5 8 0s5 5 8 0 5-5 8 0"/></svg>
       All Abuzz <span class="accent">Digital</span>
     </div>
-    <span class="logo-tagline">Creative · Marketing · Digital Media</span>
+    <span class="logo-tagline">Web Design · Technology · Marketing · Media</span>
   </div>
   <div class="nav-links">
     <a onclick="showPage('home'); return false;" class="active" data-page="home">Home</a>
@@ -3463,11 +3507,30 @@ footer {
   </div>
 </section>
 
+<!-- ABOUT SNAPSHOT -->
+<section class="about-snapshot">
+  <div class="about-snapshot-inner">
+    <div class="about-snapshot-text">
+      <h2>Helping Small Businesses <span class="gradient-text">Nationwide</span></h2>
+      <p>We specialize in helping small businesses of every kind — from solo practitioners to local storefronts — build the digital foundation they need to compete. Our clients span the country, but our focus stays local: improving the performance, visibility, and technology that drive real results in your&nbsp;market.</p>
+      <p>From building your first website to streamlining your operations, we cover every dimension of your digital&nbsp;presence.</p>
+      <a onclick="showPage('about'); return false;" class="spec-link">More About Us →</a>
+    </div>
+    <div class="about-snapshot-accent">
+      <svg class="about-snapshot-waves" viewBox="0 0 200 400" preserveAspectRatio="none">
+        <path d="M100 0 C100 0, 150 60, 100 120 S50 180, 100 240 S150 300, 100 360 S50 400, 100 400" fill="none" stroke="var(--cyan)" stroke-width="1.5" opacity="0.3"/>
+        <path d="M140 0 C140 0, 190 60, 140 120 S90 180, 140 240 S190 300, 140 360 S90 400, 140 400" fill="none" stroke="var(--green)" stroke-width="1.2" opacity="0.2"/>
+        <path d="M60 0 C60 0, 110 60, 60 120 S10 180, 60 240 S110 300, 60 360 S10 400, 60 400" fill="none" stroke="var(--purple)" stroke-width="1" opacity="0.15"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
 <!-- NO GATEKEEPING -->
 <section class="gatekeeping">
   <div class="gatekeeping-inner">
     <div class="gatekeeping-glow"></div>
-    <h2 class="gatekeeping-heading">No Gatekeeping. <span class="gradient-text">You Retain Control.</span></h2>
+    <h2 class="gatekeeping-heading">No Gatekeeping.<br><span class="gradient-text">You Retain Control.</span></h2>
     <p class="gatekeeping-body">Whether you need a website, help showing up on Google, a CRM that brings all aspects of your business into one interface, or someone to map out what technology your business needs next — we make it simple, affordable, and yours to keep.</p>
   </div>
 </section>
@@ -3476,7 +3539,7 @@ footer {
 <section class="pillars">
   <div class="pillars-top">
     <h2>Three Ways We Help Your Business Thrive</h2>
-    <p>From building your first website to streamlining your operations, we cover every dimension of your digital presence.</p>
+    <p>We design, build, and optimize the digital tools that help small businesses get found, get organized, and get&nbsp;growing.</p>
   </div>
   <div class="pillars-cards">
     <div class="pil-card">
@@ -3485,8 +3548,8 @@ footer {
       <p>Your business deserves more than a template. We design websites, write content, and develop the digital identity that makes the right first impression.</p>
       <ul class="pil-list">
         <li><span class="dot"></span> Website Design &amp; Development</li>
-        <li><span class="dot"></span> Content &amp; Copywriting</li>
-        <li><span class="dot"></span> Brand Messaging</li>
+        <li><span class="dot"></span> Content Creation &amp; Copywriting</li>
+        <li><span class="dot"></span> Digital Footprint</li>
       </ul>
     </div>
     <div class="pil-card">
@@ -3502,11 +3565,12 @@ footer {
     <div class="pil-card">
       <div class="pil-num">03</div>
       <h3>Streamline Your Business</h3>
-      <p>The right tools save time, reduce headaches, and let you focus on your clients. We help you choose, set up, and master systems that keep things running.</p>
+      <p>The right tools save time, reduce headaches, and let you focus on your clients and customers. We help you choose, set up, and master systems that keep things running.</p>
       <ul class="pil-list">
         <li><span class="dot"></span> CRM &amp; EHR Setup</li>
         <li><span class="dot"></span> Technology Consulting</li>
         <li><span class="dot"></span> Workflow &amp; Operations</li>
+        <li><span class="dot"></span> Custom AI Service Solutions</li>
       </ul>
     </div>
   </div>
@@ -3529,7 +3593,7 @@ footer {
   <div class="grid-bg"></div>
   <div class="why-header">
     <div class="why-label">Why Choose Us</div>
-    <h2>Why Small Businesses Choose Us</h2>
+    <h2>Unique Small Business Support</h2>
   </div>
   <div class="why-grid">
     <div class="w-card">
@@ -3539,18 +3603,18 @@ footer {
     </div>
     <div class="w-card">
       <div class="w-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-      <h3>No Big Upfront Costs</h3>
+      <h3>Small Budget Solutions</h3>
       <p>Flat fees, phased plans, and flexible arrangements tailored to your budget.</p>
     </div>
     <div class="w-card">
       <div class="w-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
       <h3>Real Experience</h3>
-      <p>Three Master's degrees. Hands-on consulting. Clear communication, every time.</p>
+      <p>Hands-on consulting grounded in industry best practices. Clear communication, every&nbsp;time.</p>
     </div>
     <div class="w-card">
-      <div class="w-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg></div>
+      <div class="w-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21V4"/><path d="M4 4l12 4-12 4"/></svg></div>
       <h3>Built for Independence</h3>
-      <p>We set things up so you can manage them yourself. No lock-ins, no dependence.</p>
+      <p>We empower our clients to manage their own digital presence. No dependence — that's the&nbsp;point.</p>
     </div>
   </div>
 </section>
@@ -3560,8 +3624,8 @@ footer {
   <div class="spec-inner">
     <div class="spec-text">
       <div class="section-label">Industry Expertise</div>
-      <h2>Specialized Support for Restaurants &amp; Mental Health Practices</h2>
-      <p>We've built deep expertise in two industries where digital presence and the right technology make all the difference. From therapist directory listings to restaurant reservation systems, we know the tools, the platforms, and the pain points.</p>
+      <h2>Specialized Support for <span class="gradient-text">Restaurants</span> &amp; Mental Health Practices</h2>
+      <p>We've built deep expertise in two industries where the right digital strategy makes all the difference. From HIPAA-compliant intake systems and therapist directory optimization to restaurant-specific advertising platforms and reservation integrations — we know the niche pain points, the best practices, and the specialized tools your industry&nbsp;demands.</p>
       <a onclick="showPage('specialties'); return false;" class="spec-link">Learn More About Our Specialties →</a>
     </div>
     <div class="spec-visual">
@@ -3589,8 +3653,7 @@ footer {
     <div class="pricing-home-features">
       <div class="pricing-feature"><div class="pf-dot pf-cyan"></div><div><strong>Flat-Fee Projects</strong><span>Defined scope, clear cost, no surprises</span></div></div>
       <div class="pricing-feature"><div class="pf-dot pf-green"></div><div><strong>Monthly Retainers</strong><span>Flexible ongoing support that evolves with you</span></div></div>
-      <div class="pricing-feature"><div class="pf-dot pf-purple"></div><div><strong>Hourly Consulting</strong><span>Expert guidance without a larger commitment</span></div></div>
-      <div class="pricing-feature"><div class="pf-dot pf-cyan"></div><div><strong>Phased Plans</strong><span>Spread the work over time to match your budget</span></div></div>
+      <div class="pricing-feature"><div class="pf-dot pf-purple"></div><div><strong>Phased Plans</strong><span>Spread the work over time to match your budget</span></div></div>
     </div>
   </div>
 </section>
@@ -4837,7 +4900,7 @@ footer {
   <div class="page-header-content">
     <div class="page-header-label">About Us</div>
     <h1>Small business digital consulting — <span class="gradient-text">without the agency price tag</span></h1>
-    <p class="sub">Bridging the gap between specialty expertise and digital business success. Concierge-level consulting for small businesses that want to grow — without losing control of what they build.</p>
+    <p class="sub">We provide the specialty expertise and custom support to help small businesses compete in their local&nbsp;market.</p>
   </div>
 </section>
 
@@ -4848,8 +4911,8 @@ footer {
       <div class="label">Our Story</div>
       <h2>Built to fill the gap big agencies leave behind</h2>
       <p>Most digital agencies are built to serve other agencies, mid-size companies, or big budgets. Small businesses end up either overpaying for services they don't need — or trying to figure it out alone with free tools and YouTube tutorials. All Abuzz Digital was built to fill that gap.</p>
-      <p>We're founded by a seasoned digital consultant who also brings the perspective of a college English instructor and a private-practice business manager. That mix shapes everything we do: we write website copy that actually communicates, we explain technical decisions in plain language, and we know the operational side of running a small practice from the inside.</p>
       <p>We don't believe in one-size-fits-all packages or locking clients into services they don't understand. We start by listening — to where your business is, where you want it to go, and what's actually within reach without blowing the budget.</p>
+      <p>The people who need the most help are often the ones who can least afford it. Small businesses matter — they're our neighbors, our communities, and the backbone of the local economy. When we help a small business get found, get organized, and grow, everyone around them benefits&nbsp;too.</p>
     </div>
     <div class="svc-detail-photo">FOUNDER PHOTO</div>
   </div>
